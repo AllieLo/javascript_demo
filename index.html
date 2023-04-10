@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        /**
+         * let/var/const 用法
+         * 計算圓面積
+         */
+        //圓周率
+        const PI = 3.1415926;
+        let radius = 0;
+        console.log(radius);
+        while (true) {
+            radius = prompt("請輸入半徑:");
+            // != --> not
+            if (!isNaN(radius)) {
+                break;
+            }
+        }
+
+        let area = radius ** 2 * PI;
+        console.log(area);
+        // 區域變數
+        if (radius >= 10) {
+            let radius = "5";
+            let area = radius ** 2 * PI;
+            console.log(typeof (area));
+        }
+
+        const result = "半徑為" + radius + " 面積為" + area;
+        // 三種輸出方式
+        console.log(typeof (result));
+        document.write("<h3>" + result + "</h3>");
+        alert(result);
+
+    </script>
+</body>
+
+</html>
