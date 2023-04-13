@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .date {
+            color: red;
+        }
+
+        body {
+            text-align: center;
+            background-color: beige;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .title {
+            background-color: goldenrod;
+            color: white;
+        }
+
+        span.date {
+            padding: 6px;
+            border-radius: 3px;
+        }
+
+        #start {
+            background-color: brown;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 3px;
+            margin-top: 12px;
+
+        }
+
+        table {
+            width: 50%;
+            margin: 0 auto;
+            background-color: burlywood;
+        }
+
+        td {
+            width: 20px;
+            background-color: cadetblue;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>JavaScript</h1>
+    <p class="date"></p>
+    <h1 class="title" ; style="padding: 12px;">大樂透號碼</h1>
+    <h3>開獎日期:<span class="date"></span></h3>
+    <div class="lotto-number">
+        <p>
+            <li>開獎中.....</li>
+        </p>
+    </div>
+    <button id="start" type="button" onclick="lottoClick()">開始</button> <!-- 見lotto.js line35:按鈕監聽說明 -->
     <script src="./index.js"></script>
+    <script src="./lotto.js"></script>
 </body>
 
 </html>

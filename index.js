@@ -6,9 +6,9 @@ let lottos = [];
 const getRandNumber = (start, end) => Math.floor(Math.random() * (end - start + 1)) + start;
 
 // (1)宣告外圍迴圈-->二維陣列
-document.write("<h2>大樂透號碼</h2>");
+//(樂透關)document.write("<h2>大樂透號碼</h2>");
 for (let j = 0; j < 5; j++) {
-    lotto = getLotto(start, end, 6)
+    let lotto = getLotto(start, end, 6)
     lottos.push(lotto);
     //document.write(`<li style="color:blue">${lotto.join(",")}</li>`); (見說明A)
 }
@@ -36,8 +36,8 @@ console.log(c);
 // }
 
 for (let i = 0; i < lottos.length; i++) {
-    document.write(`<li style=${i % 2 == 0 ? "color:red" : "color:blue"}>${lottos[i].join(",")}</li>`);
-    document.write("<hr>");
+    //(樂透關)document.write(`<li style=${i % 2 == 0 ? "color:red" : "color:blue"}>${lottos[i].join(",")}</li>`);
+    //(樂透關)document.write("<hr>");
 
     // if (i%2==0){
     //     document.write(`<li style="color:red">${lottos[i].join(",")}</li>`);
@@ -102,13 +102,13 @@ let users = [
     }
 ]
 
-console.log(users);
-console.log(users[0]);
+//(樂透關)console.log(users);
+//(樂透關)console.log(users[0]);
 
 //使用for迴圈取值、姓名、email輸出document
-for (let i = 0; i < users.length; i++) {
-    document.write(`${users[i].name}<br>${users[i].email}<br>`);
-}
+//(樂透關)for (let i = 0; i < users.length; i++) {
+//(樂透關)    document.write(`${users[i].name}<br>${users[i].email}<br>`);
+//(樂透關)}
 
 //使用forEach取值、姓名、email輸出document
-users.forEach(user => document.write(`${user.name}<br>${user.email}<br>`));
+//(樂透關)users.forEach(user => document.write(`${user.name}<br>${user.email}<br>`));
